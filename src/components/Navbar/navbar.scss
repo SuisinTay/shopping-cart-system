@@ -1,0 +1,39 @@
+nav {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+
+    li {
+      margin: 0 1rem;
+
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all var(--transition-speed) ease;
+
+        &:hover {
+          background-color: var(--secondary-color);
+          color: var(--primary-color);
+        }
+
+        &.active {
+          background-color: var(--hover-color);
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}
